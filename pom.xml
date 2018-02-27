@@ -15,7 +15,47 @@
         <!--<junit.vintage.version>${junit.version}.0</junit.vintage.version>-->
         <junit.jupiter.version>5.0.0</junit.jupiter.version>
         <junit.platform.version>1.0.0</junit.platform.version>
+
+        <lambda.functionCode>${project.build.directory}/${project.build.finalName}.jar</lambda.functionCode>
+        <lambda.version>${project.version}</lambda.version>
+        <lambda.publish>true</lambda.publish>
+        <lambda.forceUpdate>true</lambda.forceUpdate>
+        <lambda.functionNameSuffix>dev</lambda.functionNameSuffix>
+        <app.environment>MY</app.environment>
+        <lambda.region>us-east-1</lambda.region>
+        <lambda.s3.bucket>deployment-artifacts-dev</lambda.s3.bucket>
+        <lambda.role.arn>arn:aws:iam::324609709848:role/lambda-exec</lambda.role.arn>
     </properties>
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <lambda.region>us-east-1</lambda.region>
+                <lambda.s3.bucket>deployment-artifacts-dev</lambda.s3.bucket>
+                <lambda.role.arn>arn:aws:iam::324609709848:role/lambda-exec</lambda.role.arn>
+            </properties>
+        </profile>
+        <profile>
+            <id>qa</id>
+            <properties>
+                <lambda.region>us-west-1</lambda.region>
+                <lambda.s3.bucket>deployment-artifacts-qa</lambda.s3.bucket>
+                <lambda.role.arn>arn:aws:iam::***:role/lambda_dynamo_streams</lambda.role.arn>
+            </properties>
+        </profile>
+        <profile>
+            <id>production</id>
+            <properties>
+                <lambda.region>eu-west-1</lambda.region>
+                <lambda.s3.bucket>deployment-artifacts-production</lambda.s3.bucket>
+                <lambda.role.arn>arn:aws:iam::***:role/lambda_dynamo_streams</lambda.role.arn>
+            </properties>
+        </profile>
+    </profiles>
 
     <build>
         <plugins>
@@ -27,6 +67,20 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>2.4.3</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
     </build>
 
