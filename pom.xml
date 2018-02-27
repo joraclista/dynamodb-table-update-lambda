@@ -81,6 +81,54 @@
                 </executions>
             </plugin>
 
+            <plugin>
+                <groupId>com.github.seanroy</groupId>
+                <artifactId>lambda-maven-plugin</artifactId>
+                <version>2.1.4</version>
+                <configuration>
+                    <!--<accessKey>***</accessKey>-->
+                    <!--<secretKey>*****</secretKey>-->
+                    <functionCode>${lambda.functionCode}</functionCode>
+                    <version>${lambda.version}</version>
+                    <lambdaRoleArn>${lambda.role.arn}</lambdaRoleArn>
+                    <region>${lambda.region}</region>
+                    <s3Bucket>${lambda.s3.bucket}</s3Bucket>
+                    <publish>${lambda.publish}</publish>
+                    <forceUpdate>${lambda.forceUpdate}</forceUpdate>
+                    <!--<functionNameSuffix>${lambda.functionNameSuffix}</functionNameSuffix>-->
+                    <lambdaFunctionsJSON>
+                        [
+                            {
+                                "functionName": "dynamodb-tables-update-lambda",
+                                "description": "dynamoDB Tables Records Update lambda function",
+                                "handler": "com.github.joraclista.ElasticReindexingLambda::handleRequest",
+                                "timeout": 30,
+                                "memorySize": 512,
+                                "triggers": [
+                                    {
+                                        "integration": "DynamoDB",
+                                        "dynamoDBTable": "Merchants",
+                                        "batchSize": 1,
+                                        "startingPosition": "TRIM_HORIZON"
+                                    },
+                                    {
+                                        "integration": "DynamoDB",
+                                        "dynamoDBTable": "Products",
+                                        "batchSize": 1,
+                                        "startingPosition": "TRIM_HORIZON"
+                                    },
+                                    {
+                                        "integration": "DynamoDB",
+                                        "dynamoDBTable": "Orders",
+                                        "batchSize": 1,
+                                        "startingPosition": "TRIM_HORIZON"
+                                    }
+                                ]
+                            }
+                        ]
+                    </lambdaFunctionsJSON>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
