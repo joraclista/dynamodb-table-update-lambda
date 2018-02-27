@@ -70,4 +70,10 @@ REPORT RequestId: 225c79c0-4fc3-4c4b-86f4-848c17a50b06
 Duration: 238.21 ms	
 Billed Duration: 300 ms 
 Memory Size: 512 MB	
-Max Memory Used: 58 MB	```
+Max Memory Used: 58 MB	
+```
+
+
+### Test
+
+for testing purporse valid jsons for incoming lambda data is used, please [see in test/resorces folder](https://github.com/joraclista/dynamodb-table-update-lambda/tree/master/src/test/resources)
