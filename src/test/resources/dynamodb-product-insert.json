@@ -1,0 +1,485 @@
+{
+  "records": [
+    {
+      "eventID": "d6d7444121240dfa91070062ba2be1a6",
+      "eventName": "INSERT",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "approximateCreationDateTime": 1519736640000,
+        "keys": {
+          "id": {
+            "s": "888ef31b-b19c-4f72-a443-db1923ee291e",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          }
+        },
+        "newImage": {
+          "images": {
+            "s": null,
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": [
+              {
+                "s": "jadore-you/img_7025__41314-1477997249-332-500.jpg",
+                "n": null,
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              },
+              {
+                "s": "jadore-you/img_7025__41314-1477997249-244-365.jpg",
+                "n": null,
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              }
+            ],
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "added": {
+            "s": "2016-11-04T12:46:15.996Z",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "finalStock": {
+            "s": null,
+            "n": "10",
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "commentSummary": {
+            "s": null,
+            "n": null,
+            "b": null,
+            "m": {
+              "starsAverage": {
+                "s": null,
+                "n": "0",
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              },
+              "starsCount": {
+                "s": null,
+                "n": "0",
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              },
+              "starsCount1": {
+                "s": null,
+                "n": "0",
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              },
+              "starsCount5": {
+                "s": null,
+                "n": "0",
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              },
+              "starsCount4": {
+                "s": null,
+                "n": "0",
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              },
+              "starsCount3": {
+                "s": null,
+                "n": "0",
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              },
+              "starsCount2": {
+                "s": null,
+                "n": "0",
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              },
+              "starsValue": {
+                "s": null,
+                "n": "0",
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              }
+            },
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "title": {
+            "s": "Gigi Black Distressed Cold Shoulder Knitted Jumper",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "version": {
+            "s": null,
+            "n": "1",
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "productPopularity": {
+            "s": null,
+            "n": "0",
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "merchantProductId": {
+            "s": "1916",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "material": {
+            "s": null,
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": [],
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "merchantId": {
+            "s": "jadore-you",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "price": {
+            "s": null,
+            "n": "18.5",
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "variations": {
+            "s": null,
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": [
+              {
+                "s": null,
+                "n": null,
+                "b": null,
+                "m": {
+                  "image": {
+                    "s": "jadore-you/img_7025__41314-1477997249-332-500.jpg",
+                    "n": null,
+                    "b": null,
+                    "m": null,
+                    "l": null,
+                    "null": null,
+                    "bool": null,
+                    "ss": null,
+                    "ns": null,
+                    "bs": null
+                  },
+                  "images": {
+                    "s": null,
+                    "n": null,
+                    "b": null,
+                    "m": null,
+                    "l": [
+                      {
+                        "s": "jadore-you/img_7025__41314-1477997249-332-500.jpg",
+                        "n": null,
+                        "b": null,
+                        "m": null,
+                        "l": null,
+                        "null": null,
+                        "bool": null,
+                        "ss": null,
+                        "ns": null,
+                        "bs": null
+                      },
+                      {
+                        "s": "jadore-you/img_7025__41314-1477997249-244-365.jpg",
+                        "n": null,
+                        "b": null,
+                        "m": null,
+                        "l": null,
+                        "null": null,
+                        "bool": null,
+                        "ss": null,
+                        "ns": null,
+                        "bs": null
+                      }
+                    ],
+                    "null": null,
+                    "bool": null,
+                    "ss": null,
+                    "ns": null,
+                    "bs": null
+                  },
+                  "color": {
+                    "s": "Black",
+                    "n": null,
+                    "b": null,
+                    "m": null,
+                    "l": null,
+                    "null": null,
+                    "bool": null,
+                    "ss": null,
+                    "ns": null,
+                    "bs": null
+                  },
+                  "size": {
+                    "s": "One size",
+                    "n": null,
+                    "b": null,
+                    "m": null,
+                    "l": null,
+                    "null": null,
+                    "bool": null,
+                    "ss": null,
+                    "ns": null,
+                    "bs": null
+                  },
+                  "sizeSelect": {
+                    "s": "One size",
+                    "n": null,
+                    "b": null,
+                    "m": null,
+                    "l": null,
+                    "null": null,
+                    "bool": null,
+                    "ss": null,
+                    "ns": null,
+                    "bs": null
+                  },
+                  "sKU": {
+                    "s": "1916_black_one-size",
+                    "n": null,
+                    "b": null,
+                    "m": null,
+                    "l": null,
+                    "null": null,
+                    "bool": null,
+                    "ss": null,
+                    "ns": null,
+                    "bs": null
+                  },
+                  "stock": {
+                    "s": null,
+                    "n": "0",
+                    "b": null,
+                    "m": null,
+                    "l": null,
+                    "null": null,
+                    "bool": null,
+                    "ss": null,
+                    "ns": null,
+                    "bs": null
+                  }
+                },
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              }
+            ],
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "modified": {
+            "s": "2017-02-17T20:08:57.459Z",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "currency": {
+            "s": "GBP",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "id": {
+            "s": "888ef31b-b19c-4f72-a443-db1923ee291e",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "slug": {
+            "s": "gigi-black-distressed-cold-shoulder-knitted-jumper",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "status": {
+            "s": "DISABLED",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          }
+        },
+        "oldImage": null,
+        "sequenceNumber": "1802019600000000021775639703",
+        "sizeBytes": 854,
+        "streamViewType": "NEW_AND_OLD_IMAGES"
+      },
+      "userIdentity": null,
+      "eventSourceARN": "arn:aws:dynamodb:us-east-1:324609709848:table/Products/stream/2017-02-15T10:26:02.608"
+    }
+  ]
+}

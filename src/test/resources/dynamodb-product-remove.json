@@ -1,0 +1,461 @@
+{
+  "records": [
+    {
+      "eventID": "fa12a3acdfd516ae8e3bd86c20dfd0d5",
+      "eventName": "REMOVE",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "approximateCreationDateTime": 1519736640000,
+        "keys": {
+          "id": {
+            "s": "915d971d-b1ef-3d33-9a53-81d8e3416960",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          }
+        },
+        "newImage": null,
+        "oldImage": {
+          "images": {
+            "s": null,
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": [
+              {
+                "s": "jadore-you/img_1236__93627-1485440322__39298-1485774012-332-500.jpg",
+                "n": null,
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              }
+            ],
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "added": {
+            "s": "2017-02-03T10:36:51.054Z",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "finalStock": {
+            "s": null,
+            "n": "2",
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "commentSummary": {
+            "s": null,
+            "n": null,
+            "b": null,
+            "m": {
+              "starsAverage": {
+                "s": null,
+                "n": "0",
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              },
+              "starsCount": {
+                "s": null,
+                "n": "0",
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              },
+              "starsCount1": {
+                "s": null,
+                "n": "0",
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              },
+              "starsCount5": {
+                "s": null,
+                "n": "0",
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              },
+              "starsCount4": {
+                "s": null,
+                "n": "0",
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              },
+              "starsCount3": {
+                "s": null,
+                "n": "0",
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              },
+              "starsCount2": {
+                "s": null,
+                "n": "0",
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              },
+              "starsValue": {
+                "s": null,
+                "n": "0",
+                "b": null,
+                "m": null,
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              }
+            },
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "title": {
+            "s": "Nancy Bow Ruffle Sleeve Top in White",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "version": {
+            "s": null,
+            "n": "1",
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "productPopularity": {
+            "s": null,
+            "n": "0",
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "merchantProductId": {
+            "s": "2240",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "material": {
+            "s": null,
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": [],
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "merchantId": {
+            "s": "jadore-you",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "price": {
+            "s": null,
+            "n": "17.5",
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "variations": {
+            "s": null,
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": [
+              {
+                "s": null,
+                "n": null,
+                "b": null,
+                "m": {
+                  "image": {
+                    "s": "jadore-you/img_1236__93627-1485440322__39298-1485774012-332-500.jpg",
+                    "n": null,
+                    "b": null,
+                    "m": null,
+                    "l": null,
+                    "null": null,
+                    "bool": null,
+                    "ss": null,
+                    "ns": null,
+                    "bs": null
+                  },
+                  "images": {
+                    "s": null,
+                    "n": null,
+                    "b": null,
+                    "m": null,
+                    "l": [
+                      {
+                        "s": "jadore-you/img_1236__93627-1485440322__39298-1485774012-332-500.jpg",
+                        "n": null,
+                        "b": null,
+                        "m": null,
+                        "l": null,
+                        "null": null,
+                        "bool": null,
+                        "ss": null,
+                        "ns": null,
+                        "bs": null
+                      }
+                    ],
+                    "null": null,
+                    "bool": null,
+                    "ss": null,
+                    "ns": null,
+                    "bs": null
+                  },
+                  "color": {
+                    "s": "White",
+                    "n": null,
+                    "b": null,
+                    "m": null,
+                    "l": null,
+                    "null": null,
+                    "bool": null,
+                    "ss": null,
+                    "ns": null,
+                    "bs": null
+                  },
+                  "size": {
+                    "s": "One size",
+                    "n": null,
+                    "b": null,
+                    "m": null,
+                    "l": null,
+                    "null": null,
+                    "bool": null,
+                    "ss": null,
+                    "ns": null,
+                    "bs": null
+                  },
+                  "sizeSelect": {
+                    "s": "One size",
+                    "n": null,
+                    "b": null,
+                    "m": null,
+                    "l": null,
+                    "null": null,
+                    "bool": null,
+                    "ss": null,
+                    "ns": null,
+                    "bs": null
+                  },
+                  "sKU": {
+                    "s": "2240whiteone-size",
+                    "n": null,
+                    "b": null,
+                    "m": null,
+                    "l": null,
+                    "null": null,
+                    "bool": null,
+                    "ss": null,
+                    "ns": null,
+                    "bs": null
+                  },
+                  "stock": {
+                    "s": null,
+                    "n": "2",
+                    "b": null,
+                    "m": null,
+                    "l": null,
+                    "null": null,
+                    "bool": null,
+                    "ss": null,
+                    "ns": null,
+                    "bs": null
+                  }
+                },
+                "l": null,
+                "null": null,
+                "bool": null,
+                "ss": null,
+                "ns": null,
+                "bs": null
+              }
+            ],
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "modified": {
+            "s": "2017-02-17T20:08:58.859Z",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "currency": {
+            "s": "GBP",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "id": {
+            "s": "915d971d-b1ef-3d33-9a53-81d8e3416960",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "slug": {
+            "s": "nancy-bow-ruffle-sleeve-top-in-white_915d971d-b1ef-3d33-9a53-81d8e3416960",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          },
+          "status": {
+            "s": "PUBLIC",
+            "n": null,
+            "b": null,
+            "m": null,
+            "l": null,
+            "null": null,
+            "bool": null,
+            "ss": null,
+            "ns": null,
+            "bs": null
+          }
+        },
+        "sequenceNumber": "1802019700000000021775663156",
+        "sizeBytes": 814,
+        "streamViewType": "NEW_AND_OLD_IMAGES"
+      },
+      "userIdentity": null,
+      "eventSourceARN": "arn:aws:dynamodb:us-east-1:324609709848:table/Products/stream/2017-02-15T10:26:02.608"
+    }
+  ]
+}
