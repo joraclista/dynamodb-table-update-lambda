@@ -98,33 +98,33 @@
                     <!--<functionNameSuffix>${lambda.functionNameSuffix}</functionNameSuffix>-->
                     <lambdaFunctionsJSON>
                         [
-                            {
-                                "functionName": "dynamodb-tables-update-lambda",
-                                "description": "dynamoDB Tables Records Update lambda function",
-                                "handler": "com.github.joraclista.ElasticReindexingLambda::handleRequest",
-                                "timeout": 30,
-                                "memorySize": 512,
-                                "triggers": [
-                                    {
-                                        "integration": "DynamoDB",
-                                        "dynamoDBTable": "Merchants",
-                                        "batchSize": 1,
-                                        "startingPosition": "TRIM_HORIZON"
-                                    },
-                                    {
-                                        "integration": "DynamoDB",
-                                        "dynamoDBTable": "Products",
-                                        "batchSize": 1,
-                                        "startingPosition": "TRIM_HORIZON"
-                                    },
-                                    {
-                                        "integration": "DynamoDB",
-                                        "dynamoDBTable": "Orders",
-                                        "batchSize": 1,
-                                        "startingPosition": "TRIM_HORIZON"
-                                    }
-                                ]
-                            }
+                        {
+                        "functionName": "dynamodb-tables-update-lambda",
+                        "description": "dynamoDB Tables Records Update lambda function",
+                        "handler": "com.github.joraclista.DynamoDbUpdatesHandler:handleRequest",
+                        "timeout": 30,
+                        "memorySize": 512,
+                        "triggers": [
+                        {
+                        "integration": "DynamoDB",
+                        "dynamoDBTable": "Merchants",
+                        "batchSize": 1,
+                        "startingPosition": "TRIM_HORIZON"
+                        },
+                        {
+                        "integration": "DynamoDB",
+                        "dynamoDBTable": "Products",
+                        "batchSize": 1,
+                        "startingPosition": "TRIM_HORIZON"
+                        },
+                        {
+                        "integration": "DynamoDB",
+                        "dynamoDBTable": "Orders",
+                        "batchSize": 1,
+                        "startingPosition": "TRIM_HORIZON"
+                        }
+                        ]
+                        }
                         ]
                     </lambdaFunctionsJSON>
                 </configuration>

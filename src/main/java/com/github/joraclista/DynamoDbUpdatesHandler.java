@@ -20,7 +20,7 @@ import static com.amazonaws.regions.Regions.fromName;
  * version 1.0.
  */
 @Slf4j
-public class ElasticReindexingLambda implements RequestHandler<DynamodbEvent, Object> {
+public class DynamoDbUpdatesHandler implements RequestHandler<DynamodbEvent, Object> {
 
     private static final String STATUS_OK = "OK";
     private static final String STATUS_FAILED = "Failed";

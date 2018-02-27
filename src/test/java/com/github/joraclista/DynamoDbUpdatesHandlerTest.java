@@ -44,7 +44,7 @@ public class DynamoDbUpdatesHandlerTest {
         DynamodbEvent input = read("dynamodb-merchant-modify.json", DynamodbEvent.class);
         input.getRecords().forEach(r -> r.setEventName(OperationType.MODIFY));
         input.getRecords().forEach(r -> assertTrue(r.getEventSourceARN().contains("table/Merchants")));
-        new ElasticReindexingLambda().handleRequest(input, null);
+        new DynamoDbUpdatesHandler().handleRequest(input, null);
     }
 
     @Test
@@ -52,7 +52,7 @@ public class DynamoDbUpdatesHandlerTest {
         DynamodbEvent input = read("dynamodb-product-modify.json", DynamodbEvent.class);
         input.getRecords().forEach(r -> r.setEventName(OperationType.MODIFY));
         input.getRecords().forEach(r -> assertTrue(r.getEventSourceARN().contains("table/Products")));
-        new ElasticReindexingLambda().handleRequest(input, null);
+        new DynamoDbUpdatesHandler().handleRequest(input, null);
     }
 
     @Test
@@ -60,7 +60,7 @@ public class DynamoDbUpdatesHandlerTest {
         DynamodbEvent input = read("dynamodb-product-remove.json", DynamodbEvent.class);
         input.getRecords().forEach(r -> r.setEventName(OperationType.REMOVE));
         input.getRecords().forEach(r -> assertTrue(r.getEventSourceARN().contains("table/Products")));
-        new ElasticReindexingLambda().handleRequest(input, null);
+        new DynamoDbUpdatesHandler().handleRequest(input, null);
     }
 
     @Test
@@ -68,6 +68,6 @@ public class DynamoDbUpdatesHandlerTest {
         DynamodbEvent input = read("dynamodb-product-insert.json", DynamodbEvent.class);
         input.getRecords().forEach(r -> r.setEventName(OperationType.INSERT));
         input.getRecords().forEach(r -> assertTrue(r.getEventSourceARN().contains("table/Products")));
-        new ElasticReindexingLambda().handleRequest(input, null);
+        new DynamoDbUpdatesHandler().handleRequest(input, null);
     }
 }
