@@ -1,6 +1,5 @@
 package com.github.joraclista;
 
-import com.amazonaws.regions.Regions;
 import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 import com.amazonaws.services.dynamodbv2.model.StreamRecord;
 import com.amazonaws.services.lambda.runtime.Context;
@@ -14,6 +13,8 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.Map;
 
+import static com.amazonaws.regions.Regions.fromName;
+
 /**
  * Created by Alisa
  * version 1.0.
@@ -26,18 +27,17 @@ public class ElasticReindexingLambda implements RequestHandler<DynamodbEvent, Ob
 
     @Override
     public Object handleRequest(DynamodbEvent input, Context context) {
-       Environment environment = new Environment(Regions.US_EAST_1);
-        // source.arn = arn:aws:dynamodb:us-east-1:324609709848:table/Products/stream/2017-02-15T10:26:02.608
-        log.info("handleRequest environment = {}; input.size = {} ", environment, input.getRecords().size());
+        log.info("handleRequest input.size = {} ", input.getRecords().size());
         try {
             for (DynamodbEvent.DynamodbStreamRecord r : input.getRecords()) {
+                // source.arn = arn:aws:dynamodb:us-east-1:324609709848:table/Products/stream/2017-02-15T10:26:02.608
                 log.info("Event id = {}; name = {}; source = {}; source.arn = {};",
                         r.getEventID(), r.getEventName(), r.getEventSource(), r.getEventSourceARN());
 
                 String tableName = r.getEventSourceARN().split("/")[1];
-
-
-                log.info("tableName = [{}]; ", tableName);
+                String region = r.getEventSourceARN().split(":")[3];
+                Environment environment = new Environment(fromName(region));
+                log.info("tableName = [{}]; region = {} ", tableName, region);
 
                 DynamoEventTypes dynamoEventType = DynamoEventTypes.valueOf(r.getEventName());
 
