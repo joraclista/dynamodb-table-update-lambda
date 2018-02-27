@@ -23,7 +23,6 @@ import static com.amazonaws.regions.Regions.fromName;
 public class DynamoDbUpdatesHandler implements RequestHandler<DynamodbEvent, Object> {
 
     private static final String STATUS_OK = "OK";
-    private static final String STATUS_FAILED = "Failed";
 
     @Override
     public Object handleRequest(DynamodbEvent input, Context context) {
@@ -61,7 +60,7 @@ public class DynamoDbUpdatesHandler implements RequestHandler<DynamodbEvent, Obj
             }
         } catch (Exception e) {
             log.error("handleRequest: couldn't handle request due to: error.msg = {} ", e.getMessage());
-            return STATUS_FAILED;
+            throw new RuntimeException(e.getMessage());
         }
 
         return STATUS_OK;
